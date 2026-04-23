@@ -1,36 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Title</title>
-  <meta name="description" content="A short description of the page content.">
-  <link rel="stylesheet" href="styles.css">
+  <title>Veritas | Mission & Fact Checking</title>
+  <meta name="description" content="Veritas: una piattaforma dedicata alla divulgazione scientifica e al fact checking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Site Name</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand-nav">
+        <a class="brand" href="#top">
+          <img src="src/img/Veritas_logo.svg" alt="Logo di Veritas" class="brand-logo">
+          <span>Veritas</span>
+        </a>
+        <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false">MENU</button>
+      </div>
 
-  <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>This is a base HTML template you can customize with your own content.</p>
-    </section>
-  </main>
+      <nav class="main-nav" aria-label="Navigazione principale">
+        <a href="#mission">Mission</a>
+        <a href="#fact-checking">Fact Checking</a>
+        <a href="#team">Team</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </header>
 
-  <footer>
-    <p>&copy; 2026 Your Company</p>
-  </footer>
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-content">
+          <span class="eyebrow">La verità non si impone</span>
+          <h1>SI <span>VERIFICA</span></h1>
+          <p class="hero-copy">
+            Veritas guida chi cerca informazioni affidabili attraverso una comunicazione scientifica chiara, moderna e rigorosa.
+          </p>
+        </div>
+        <div class="hero-visual" aria-hidden="true"></div>
+      </section>
 
-  <script src="script.js"></script>
+      <section class="section mission-section" id="mission">
+        <div class="section-heading">
+          <p class="section-label">Mission</p>
+          <h2>La nostra mission</h2>
+        </div>
+
+        <div class="mission-grid">
+          <article class="mission-card mission-card--quote">
+            <p class="quote-title">“Come si può rendere la <span>scienza cool</span>?”</p>
+          </article>
+          <article class="mission-card mission-card--quote">
+            <p class="quote-title">“Quali mezzi ho per distinguere le <span>notizie false</span> da quelle <span>reali</span>?”</p>
+          </article>
+          <article class="mission-card mission-card--text">
+            <p>Il progetto Veritas si propone di creare una piattaforma online dedicata alla <strong>socializzazione</strong> e alla <strong>divulgazione scientifica</strong>, aperta ad appassionati delle scienze, professionisti e giornalisti scientifici.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section fact-section" id="fact-checking">
+        <div class="section-heading section-heading--light">
+          <p class="section-label">Fact Checking</p>
+          <h2>Come facciamo a garantire per voi?</h2>
+        </div>
+
+        <div class="fact-sheet">
+          <div class="fact-sheet__tear"></div>
+          <div class="fact-sheet__title">
+            <span>FACT</span>
+            <span>CHECKING</span>
+          </div>
+        </div>
+
+        <div class="fact-card">
+          <div class="fact-card__visual"></div>
+          <div class="fact-card__content">
+            <h3>Trasparenza e rigore in ogni verifica</h3>
+            <p>Attraverso un processo chiaro e documentato, analizziamo fonti, controlliamo dati e presentiamo risultati accessibili a tutti. Ogni contenuto è pensato per costruire fiducia e combattere la disinformazione.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team-section" id="team">
+        <div class="section-heading">
+          <p class="section-label">Team</p>
+          <h2>Professionisti della scienza e del giornalismo</h2>
+        </div>
+        <p class="section-intro">Il nostro team unisce esperti scientifici, fact checker e comunicatori digitali per trasformare i dati in contenuti utili.</p>
+      </section>
+
+      <section class="section contact-section" id="contatti">
+        <div class="section-heading section-heading--light">
+          <p class="section-label">Contatti</p>
+          <h2>Resta in contatto con Veritas</h2>
+        </div>
+        <p class="section-intro">Vuoi collaborare, proporre un controllo o ricevere aggiornamenti? Scrivici e ti risponderemo rapidamente.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Veritas. Tutti i diritti riservati.</p>
+    </footer>
+  </div>
+
+  <script src="src/js/script.js"></script>
 </body>
 </html>
