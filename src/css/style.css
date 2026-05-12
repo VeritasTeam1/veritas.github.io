@@ -245,6 +245,11 @@ main {
   backdrop-filter: blur(18px);
 }
 
+.mission-card__scientist {
+  max-width: 150px;
+  height: auto;
+}
+
 .mission-card--quote {
   display: flex;
   align-items: center;
